@@ -42,4 +42,4 @@ redis-1 | 1:M 24 Nov 2026 16:55:57.074 * Ready to accept connections tcp
 1. Сборка работает, и app, и redis healthy
 2. Два POST увеличили счётчик до 2, после down/up GET вернул 2
 3. Redis остановлен: /healthz выдал 200, /readyz и POST /increment выдали 503
-4. Redis запущен: /readyz выдал 200, GET вернул 2, POST вернул 3
+4. Redis запущен: /readyz выдал 200, GET вернул 2, POST вернул 3 (приложение не перезапускалось вручную)
